@@ -10,9 +10,14 @@ Minimal C-lang library for creating classic arcade-like mini-games running on de
 - [M5Stack BASIC](http://docs.m5stack.com/en/core/basic)
 - [Playdate](https://play.date/) (Download [crisp-games.pdx.zip](https://abagames.github.io/crisp-game-lib-portable/crisp-games.pdx.zip) and sideload a game.)
 - [Adafruit PyBadge](https://learn.adafruit.com/adafruit-pybadge)
+- [Adafruit PyGamer](https://www.adafruit.com/product/4242)
 - [Arduboy](https://www.arduboy.com/)
 - [ESP32-2432S028R](https://ja.aliexpress.com/item/1005004502250619.html)
 - [ESPboy](https://www.espboy.com/)
+- [32blit](https://32blit.com/)
+- [Adafruit Fruit Jam](https://www.adafruit.com/product/6200)
+- [Pimoroni Explorer](https://shop.pimoroni.com/products/explorer?variant=42092697845843)
+- [SDL supported device](https://www.libsdl.org/)
 
 ## Sample game codes and reference
 
@@ -56,7 +61,6 @@ Minimal C-lang library for creating classic arcade-like mini-games running on de
 1. Create `cglp[target device]/` directory (e.g. `cglpM5StickCPlus/`)
 
 1. Copy `cglp[target device].ino`, [./src/lib/\*](https://github.com/abagames/crisp-game-lib-portable/tree/main/src/lib) and [./src/games/\*](https://github.com/abagames/crisp-game-lib-portable/tree/main/src/games) files to the directory
-
    - [cglpM5StickCPlus.ino](https://github.com/abagames/crisp-game-lib-portable/blob/main/src/cglpM5StickCPlus/cglpM5StickCPlus.ino)
    - [cglpM5Stack.ino](https://gist.github.com/obono/1606cf8a8a4e9c9f97de4ebebad3460a) (ported by [OBONO](https://github.com/obono))
    - [cglpPyBadge.ino](https://github.com/abagames/crisp-game-lib-portable/blob/main/src/cglpPyBadge/cglpPyBadge.ino)
@@ -94,6 +98,18 @@ Note: Some features are limited due to device resource limitations.
 ### 32blit
 
 - [crisp-game-lib-portable-32blit](https://github.com/joyrider3774/crisp-game-lib-portable-32blit) (ported by [Willems Davy](https://github.com/joyrider3774))
+
+### Adafruit Fruit Jam
+
+- [crisp-game-lib-portable-fruitjam](https://github.com/joyrider3774/crisp-game-lib-portable-fruitjam) (ported by [Willems Davy](https://github.com/joyrider3774))
+
+### Pimoroni Explorer
+
+- [crisp-game-lib-portable-pimoroni-explorer](https://github.com/joyrider3774/crisp-game-lib-portable-pimoroni-explorer) (ported by [Willems Davy](https://github.com/joyrider3774))
+
+### Adafruit PyGamer & PyBadge (with SDL port)
+
+- [crisp-game-lib-portable-pimoroni-pybadge-pygamer-arcada](https://github.com/joyrider3774/crisp-game-lib-portable-pimoroni-pybadge-pygamer-arcada) (ported by [Willems Davy](https://github.com/joyrider3774))
 
 ### SDL
 
@@ -136,7 +152,6 @@ The source codes for [library](https://github.com/abagames/crisp-game-lib-portab
 - Device initialization function (e.g. `setup()` in Arduino) that calls `initGame()`
 
 - Frame update function (e.g. `loop()` in Arduino) that calls `setButtonState()` and `updateFrame()`
-
   - The state of the button press must be notified to the library with the `setButtonState()`
 
 - Drawing and audio processing functions that are defined in [machineDependent.h](https://github.com/abagames/crisp-game-lib-portable/blob/main/src/lib/machineDependent.h)
