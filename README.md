@@ -1,5 +1,12 @@
 # crisp-game-lib-portable for the M5Stack StickS3
 
+
+## Controls:
+- **Key 1**: Button A
+- **Key 2**: Button B
+- **Key 2 long press**: Return to game selection menu
+
+
 ----------------------------------------------------------------------------
 
 Orginal README.md
