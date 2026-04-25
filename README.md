@@ -7,6 +7,12 @@
 - **Key 2 long press**: Return to game selection menu
 
 
+# Credits:
+- crisp-game-lib-portable and it's games are made by user [abagames](https://github.com/abagames)
+- The [StickS3](https://shop.m5stack.com/products/m5sticks3-esp32s3-mini-iot-dev-kit?variant=47548831072513) is made by the company [M5Stack](https://m5stack.com)
+- This StickS3 port by colinvail6
+
+
 ----------------------------------------------------------------------------
 
 Orginal README.md
