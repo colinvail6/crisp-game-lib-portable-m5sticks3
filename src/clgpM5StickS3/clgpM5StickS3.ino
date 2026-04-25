@@ -7,9 +7,6 @@
 #define BUTTON_A_PIN 11
 #define BUTTON_B_PIN 12
 
-#define _M5DISPLAY_H_
-class M5Display {};
-#include <M5StickCPlus.h>
 #include <float.h>
 
 #include "cglp.h"
